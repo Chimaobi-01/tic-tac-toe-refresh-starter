@@ -11,6 +11,7 @@ class Cursor {
 
     this.gridColor = 'black';
     this.cursorColor = 'yellow';
+    this.backgroundColor = 'blue'
 
   }
 
@@ -24,18 +25,30 @@ class Cursor {
 
   up() {
     // Move cursor up
+    if(this.row > 0){
+      this.row--
+      Screen.render()
+    }
   }
 
   down() {
     // Move cursor down
+    if(this.row < 2){
+      this.row++
+      Screen.render()
+    }
   }
 
   left() {
     // Move cursor left
+    if(this.col > 0)
+      this.col--
   }
 
   right() {
     // Move cursor right
+    if(this.col < 2)
+      this.col++
   }
 
 }

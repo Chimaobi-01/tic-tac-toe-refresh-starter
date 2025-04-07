@@ -62,7 +62,6 @@ describe ('Tic Tac Toe', function () {
 
   });
 
-
   it('recognizes diagonal wins', function () {
 
     grid = [['X',' ',' '],
@@ -98,7 +97,6 @@ describe ('Tic Tac Toe', function () {
     expect(TTT.checkWin(grid)).to.be.false;
 
   });
-
 
 });
 

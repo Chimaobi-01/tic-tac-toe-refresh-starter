@@ -1,3 +1,4 @@
+
 const { expect } = require('chai');
 
 const Cursor = require("../class/cursor.js");
@@ -64,8 +65,6 @@ describe ('Cursor', function () {
     cursor.left();
     expect([cursor.row, cursor.col]).to.deep.equal([0, 0]);
   });
-
-
 
 });
 
